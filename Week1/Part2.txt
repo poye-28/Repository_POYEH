@@ -1,0 +1,85 @@
+2. Here are a few git and GitHub commands we usually use in software development, please explain the meanings and use cases of them.
+
+  ● git status
+	- 查看目前資料庫的情形：資料的狀態是Modified、Staged還是Commited。
+	- 會提供一些指令的提示（像是 git add / git reset HEAD / git checkout) 幫助你在各個狀態轉換
+ 
+  ● git add
+	- 將資料從自己的工作目錄（working directory)移動到暫存區（Staging area)
+
+  ● git commit
+	- 將資料從暫存區（Staging Area)移動到資料庫（Repo)裡
+	- committed的檔案會被記錄下來成為其中一個版本
+
+  ● git log
+	- 查看自己資料各個版本(Commits)
+	- 可以查找commit的SHA代碼
+
+
+  ● git push [ Repo_name ] [ Branch_name ]
+	- 將資料從自己的電腦傳上遠端資料庫的特定分支
+
+
+  ● git remote -v
+	- 查看遠端資料庫（Repo）的詳細資料
+
+  ● git branch
+	- 查看自己資料庫中的分支
+
+
+  ● fork
+	- fork是直接在GitHub的網站中，點選想fork的資料庫（A）就可以在自己的GitHub中看到複製的資料庫（B)，	  可以將資料庫(B）視為資料庫（A）的分支，所以fork可以解決clone的資料庫不能push/pull的問題。
+
+
+
+3.Please describe how to establish a github repo and how to upload the local projects to github. Try to explain it as detail as possible.
+
+我們必須建立本地的資料庫，並使這個本地資料庫擁有git的性質。接著，在Github（伺服器公司）裡建立一個遠端資料庫。最後將兩個資料庫建立連結。
+
+
+1) 建立遠端資料庫（GitHub)
+	-點擊“new repository”     
+	-將資料庫命名為 Repository_POYEH
+
+2）建立本地資料庫（Terminal）
+	- 建立資料夾
+	  mkdir Repository_POYEH && cd Repository_POYEH && mkdir week1 week2 week3 week4
+
+	- 建立git Repo
+	  git init
+
+	- 設置個人名稱和信箱
+	  git config --global user.name "POYEH"
+	  git config --global user.email "fupoya@gmail.com"
+	  git config --list     (確認設置是否成功）
+
+	- 移動作業
+	  mv Part1.playground /Users/PoYeh/Desktop/Repository_POYEH/Week1
+	  git status      (查看新加入的資料夾，還停留在工作區）
+	  git add Week1/     （將整個資料夾加到暫存區，確認無誤）
+      	  git commit -m "Basic, Collection, Control Flow, Function的作答"
+	  git log       （查看第一個committed的版本）
+
+	- 創建作業
+	  touch Part2.txt
+	  vim Part2.txt   （編輯文本：回答問題）
+
+	- 將week2、week3、week4資料夾commit
+	  touch .gitkeep    (在這三個資料夾中都加入.gitkeep檔案）
+          git add week1/ week2/ week3/
+	  git commit -m "新增三個資料夾"
+
+3）將本地資料庫上傳遠端資料庫(GitHub)
+	-加入遠端資料庫
+	 git remote add origin https://github.com/poye-28/Repository_POYEH.git
+
+	-查看訊息
+	 git remote -v
+
+	-追蹤遠端資料庫的主要分支（remote master branch)
+	 git push --set-upstream origin master
+	 
+	
+	 
+			
+
