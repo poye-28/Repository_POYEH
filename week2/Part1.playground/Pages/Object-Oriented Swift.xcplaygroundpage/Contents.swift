@@ -84,7 +84,7 @@ horse.eat()
 
 
 
-//  3. Declare a class ​Zoo​ with a property ​weeklyHot​ which means the most popular one in     the zoo this week. The codes below can’t work correctly, please find what data        type should A be and solve the problem. Be ​noticed that ​tiger​, ​elephant​, ​horse​ are    instances of class Tiger, Elephant and Horse.
+//  3. Declare a class ​Zoo​ with a property ​weeklyHot​ which means the most popular one in the zoo this week. The codes below can’t work correctly, please find what data type should A be and solve the problem. Be ​noticed that ​tiger​, ​elephant​, ​horse​ are    instances of class Tiger, Elephant and Horse.
 
 class Zoo{
     var weeklyHot: Animal
@@ -103,13 +103,16 @@ zoo.weeklyHot = horse
 
 /*  4. What’s the difference between ​Struct​ and ​Class​ ?
 
-       Struct裡Swift會自動生成初始值，而Class必須透過init來定義初始值。
- 
+      1 Struct裡Swift會自動生成初始值，而Class必須透過init來定義初始值。
+      2 Structe的instance 是value type ，而Class 的則是reference type。
+        Struct創建的instance 再指派給其它變數時，這些instance是獨立存在的（所擁有的properti
+        可以設定成不一樣的值），而 class 的instance指派給其他它變數時，這些instance 是參考同一
+        個instance（更改任一property都會改變其它相關聯的數值）
 */
 
 /*  5. What’s the difference between ​instance method​ and ​type method​ ?
-
-    Instance method 必須使用struct/classlai建立一個相關的Instance，才能使用建立在struct/class裡的method。
+ 
+      Instance method 必須使用struct/class建立一個相關的Instance，才能使用建立在struct/class裡的method。
         Instance method 可以使用在同一個struct/class裡的properties和其它method。
  
  
@@ -121,8 +124,8 @@ zoo.weeklyHot = horse
 /*  6. What does ​Initilizer​ do in class and struct ?
 
        class/struct 裡的 properties 需要有一個初始值才能使用。
-       Swift內建的規則會指派一個和Property名稱相同的值給Property。
-       我們也可以透過關鍵詞init的method來創建自己的初始值。
+       Struct會自動被指派一個和Property名稱相同的初始值，而class則必須由
+       自己透過關鍵詞init的method來創建初始值。
 
 */
 
@@ -132,7 +135,13 @@ zoo.weeklyHot = horse
  
 */
 
-//  8. What’s the difference between ​reference type​ and ​value type​ ?
+/*  8. What’s the difference between ​reference type​ and ​value type​ ?
+
+      sturct 是 value type，而 class 是 reference type。
+ 
+ 
+ 
+*/
 
 
 

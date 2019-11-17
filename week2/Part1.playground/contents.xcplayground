@@ -3,5 +3,7 @@
     <pages>
         <page name='Object-Oriented Swift'/>
         <page name='Enumerations and Optionals'/>
+        <page name='Protocols in Swift'/>
+        <page name='Error Handling in Swift'/>
     </pages>
 </playground>
