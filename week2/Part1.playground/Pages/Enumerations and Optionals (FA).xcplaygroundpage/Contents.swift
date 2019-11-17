@@ -41,7 +41,7 @@ Gasoline(rawValue: "92")
 /*
     ● Please explain what is enum ​associate value​ and how it works
  
-      使用enum來宣告擁的變數的同時，還可以為這些變數添加更多的數值。
+      使用enum來宣告擁的變數的同時，還可以為這些變數添加更多相關的值。
 */
 
 

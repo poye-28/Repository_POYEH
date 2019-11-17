@@ -1,9 +1,4 @@
 //: [Previous](@previous)
-
-import Foundation
-
-var str = "Hello, playground"
-
 //: [Next](@next)
 
 /* 1. Declare a struct ​Person​ with a ​name​ property type String and a protocol name      PoliceMan​. There is only one method ​arrestCriminals​ with no argument and return   void in the protocol.
@@ -41,9 +36,9 @@ protocol ToolMan{
     func fixComputer() -> Void
 }
 
-// 5. Declare a struct named ​Engineer​ that conforming to the T​ oolMan​ protocol.
+// 5. Declare a struct named ​Engineer​ that conforming to the T​oolMan​ protocol.
 
-struct Engineer{
+struct Engineer: ToolMan{
     func fixComputer() -> Void{}
 }
 
@@ -53,4 +48,5 @@ let me = Person(name: "Steven")
 
 me.arrestCriminals()
 me.fixComputer()
+me.name
 

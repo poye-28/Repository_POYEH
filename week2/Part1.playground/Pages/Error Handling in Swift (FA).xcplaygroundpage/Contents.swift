@@ -1,10 +1,4 @@
-//: [Previous](@previous)
 
-import Foundation
-
-var str = "Hello, playground"
-
-//: [Next](@next)
 
 enum GuessNumberGameError: Error{
     case wrongNumber

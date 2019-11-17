@@ -28,11 +28,6 @@ class Animal{
     
 }
 
-//let cat = Animal.Gender.female
-//cat.eat                           -> Value of type 'Animal.Gender' has no member 'eat'
-
-//let cat : Animal
-//cat.eat()                         -> Constant 'cat' used before being initialized
 
 let dog = Animal(gender: .male)
 dog.eat()
@@ -112,8 +107,7 @@ zoo.weeklyHot = horse
 
 /*  5. What’s the difference between ​instance method​ and ​type method​ ?
  
-      Instance method 必須使用struct/class建立一個相關的Instance，才能使用建立在struct/class裡的method。
-        Instance method 可以使用在同一個struct/class裡的properties和其它method。
+ Instance method 指的是:利用enum、class、struct所產生的instane，需要通過instance來呼叫內部定義好的method。而type method 則不需要instance，而是直接在type上直接呼叫method。
  
  
  
@@ -137,7 +131,7 @@ zoo.weeklyHot = horse
 
 /*  8. What’s the difference between ​reference type​ and ​value type​ ?
 
-      sturct 是 value type，而 class 是 reference type。
+      sturct和enumeration是 value type，而 class 是reference type。value type 在創建相關的變數時，是以複製的方式來進行，這表示這些變數間是獨立存在（彼此的值是不相關的）。而reference type在創建相關變數時，改變任一數值，都會回傳最初變數（彼此的值是相關的）。
  
  
  
