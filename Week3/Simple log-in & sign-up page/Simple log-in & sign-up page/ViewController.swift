@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         checkTextField.isEnabled = false
         checkTextField.backgroundColor = .gray
-        clearAllText()
+        //clearAllText()
         // Do any additional setup after loading the view.
     }
 
