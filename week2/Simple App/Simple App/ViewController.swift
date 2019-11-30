@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         view.backgroundColor = randomColor
         showButton.tintColor = randomColor
         factLabel.text = randomFunFact
-        
 
     }
     

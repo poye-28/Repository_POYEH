@@ -11,7 +11,7 @@ import UIKit
 struct BackgroundColors {
     let colors = [
         UIColor(red: 90/255.0, green: 244/255.0, blue: 181/255.0, alpha: 1.0),
-        UIColor(red: 70/255.0, green: 34/255.0, blue: 181/255.0, alpha: 1.0),
+        UIColor(red: 78/255.0, green: 34/255.0, blue: 181/255.0, alpha: 1.0),
         UIColor(red: 90/255.0, green: 100/255.0, blue: 210/255.0, alpha: 1.0),
         UIColor(red: 200/255.0, green: 90/255.0, blue: 65/255.0, alpha: 1.0),
         UIColor(red: 170/255.0, green:56/255.0, blue: 81/255.0, alpha: 1.0),
